@@ -1,12 +1,15 @@
 # The iNaturalist Sounds Dataset
 
-![Banner](assets/overview.png)
+<p align="center">
+  <img src="assets/overview.png" alt="Bar plot" width="900" height="400">
+  <br>
+  <em>Figure 1: iNatSounds includes observations from around the world, capturing sounds of diverse species across major taxa.</em>
+</p>
 
 We present the iNaturalist Sounds Dataset (iNatSounds), a collection of 230,000 audio files capturing sounds from over 5,500 species, contributed by more than 27,000 recordists worldwide. The dataset encompasses sounds from birds, mammals, insects, reptiles, and amphibians, with audio and species labels derived from observations submitted to iNaturalist, a global citizen science platform. Each recording in the dataset varies in length and includes a single species annotation. We benchmark multiple backbone architectures, comparing multiclass classification objectives with multilabel objectives. Despite weak labeling, we demonstrate that iNatSounds serves as a robust pretraining resource, achieving high performance relative to alternatives on strongly labeled downstream evaluation datasets. The dataset is available as a single, freely accessible archive, promoting accessibility and research in this important domain. We envision models trained on this data powering next-generation public engagement applications, and assisting biologists, ecologists, and land use managers in processing large audio collections, thereby contributing to the understanding of species compositions in diverse soundscapes.
 
 ## Details
-
-
+  
 | Super Category | Train | Train | Val/Test | Val | Test |
 | ---- | ---- | ---- | ---- | ---- | ---- |
 | | **Species** | **Audio** | **Species** | **Audio** | **Audio** |
@@ -18,14 +21,18 @@ Reptilia| 32 | 154 | 3 | 49 | 32
 ||||||
 **Total**| 5,569 | 137,012 | 1,212 | 45,698 | 49,527
 
-![Class Counts](assets/class_counts.jpg)
+
+<p>
+  <img src="assets/class_counts.jpg" alt="Bar plot" width="550" height="266">
+  <br>
+</p>
 
 ## Evaluation
 
 We evaluate at the "file-level", i.e. a single prediction and label is expected from an entire audio recording. We compute the following metrics
 1. Class Averaged Top-1: Top-1 accuracy is computed for each class separately and then averaged
 2. Class Averaged Top-5: Top-5 accuracy is computed for each class separately and then averaged
-3. mAP: AP is computed for each class separately and then averaged
+3. mAP: AP is computed for each class separately and then averaged. This is the primary metric for the dataset. 
 4. mF1: F1-score is computed for each class by choosing the threshold maximising F1 (there may be different thresholds for different classes). These F1 scores are averaged
 
 
