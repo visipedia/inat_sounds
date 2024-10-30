@@ -1,7 +1,7 @@
 # The iNaturalist Sounds Dataset
 
 <p align="center">
-  <img src="assets/overview.png" alt="Bar plot" width="900" height="400">
+  <img src="assets/figure1.png" alt="Bar plot" width="900" height="506">
   <br>
   <em>Figure 1: iNatSounds includes observations from around the world, capturing sounds of diverse species across major taxa.</em>
 </p>
