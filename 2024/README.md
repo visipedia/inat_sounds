@@ -136,3 +136,7 @@ The dataset files are available through the AWS Open Data Program:
   * [Test Annotations [4.0MB]](https://ml-inat-competition-datasets.s3.amazonaws.com/sounds/2024/test.json.tar.gz)
       * s3://ml-inat-competition-datasets/sounds/2024/test.json.tar.gz
       * Running `md5sum test.json.tar.gz` should produce `5482f112f05db4ba8576ba425d95d6a7`
+
+## Models
+
+Pretrained models and code can be found at [[cvl-umass/iNatSounds](https://github.com/cvl-umass/iNatSounds)]. 
